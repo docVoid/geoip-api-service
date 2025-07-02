@@ -22,9 +22,6 @@ This is a simple and fast IP geolocation API built with FastAPI and the MaxMind 
 ## 📦 Requirements
 
 - Python 3.11+
-- MaxMind GeoLite2 City database (`GeoLite2-City.mmdb`)
-- A MaxMind account (free) to download the DB:  
-  https://www.maxmind.com/en/geolite2/signup
 
 ---
 
@@ -78,6 +75,8 @@ curl http://localhost:8000/125.45.67.18
 
 ```plaintext
 geoip-api-service/
+├── .github/workflows
+│   └── test.yml
 ├── app/
 │   ├── main.py          # API entrypoint
 │   ├── api.py           # Route definitions
@@ -86,6 +85,7 @@ geoip-api-service/
 │   ├── schemas.py       # Response models
 │   └── GeoLite2-City.mmdb  # Database
 ├── tests/               # Tests
+│   └── test_api.py
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
