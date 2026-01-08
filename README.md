@@ -28,7 +28,7 @@ This is a simple and fast IP geolocation API built with FastAPI and the MaxMind 
 ## 🔧 Installation
 
 ```bash
-git clone https://github.com/your-username/geoip-api-service.git
+git clone https://github.com/docVoid/geoip-api-service.git
 cd geoip-api-service
 python -m venv venv
 source venv/bin/activate
